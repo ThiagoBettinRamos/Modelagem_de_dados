@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    background-color: #2E2E2E; 
+    color: #333;
+}
+
+h1 {
+    display: inline-flex;
+    font-family: "Impact", sans-serif;
+    background-image: url('image.jpg');
+    font-size: 8rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #9aabbd54;
+    animation: move 30s linear infinite;
+    letter-spacing: .3rem;
+}
+
+@keyframes move {
+    from { background-position: 0 80%; }
+    to { background-position: 100% 50%; }
+}
+
+.question {
+    background: #2E2E2E;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #a309a8ab;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;       
+    width: 500px;             
+    margin: 0 auto;          
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background-color:  #a309a8;
+}
+
+.modal {
+    display: none;
+    border-top: 2px solid #a309a8;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #3F3F3F; 
+    color: #ffff; 
+    padding: 0;
+}
+
+.modal.active {
+    display: block;
+}
+
+li {
+    color: #fffafa;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* Diminuir padding para dispositivos menores */
+    }
+
+    h1 {
+        font-size: 4rem; /* Diminuir tamanho da fonte para dispositivos menores */
+    }
+
+    .btn {
+        width: 100%; /* Fazer o botão preencher a largura em dispositivos menores */
+        margin: 10px 0; /* Ajustar a margem para dispositivos menores */
+    }
+    
+    h3 {
+        padding: 1rem;
+    }
+    li{
+        padding: 1rem;
+    }
+}

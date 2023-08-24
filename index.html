@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Modelagem de dados</title>
+</head>
+<body>
+    <h1>Modelagem de Dados</h1>
+
+    <div class="question" data-question="1">
+        <button class="btn">Conceitue dados e informações</button>
+        <div class="modal">
+            <h3>
+                Dados: São fatos brutos, que podem ser números, textos ou imagens, 
+                que por si só não transmitem uma mensagem completa.
+                Eles são a matéria-prima utilizada para criar informações.
+                Por exemplo, “23”, “azul” e “Maria” são dados.
+            </h3>
+            <h3>
+                Informações: São dados processados ou organizados de uma maneira que os torna significativos ou úteis.
+                Quando os dados são colocados em um contexto ou interpretados de alguma forma, 
+                eles se transformam em informações. Usando o exemplo anterior, "Maria tem 23 anos e gosta da cor azul" é uma informação.
+            </h3>
+        </div>
+    </div>
+    <div class="question" data-question="2">
+        <button class="btn">Por que devemos utilizar um BD (Banco de Dados)?</button>
+        <div class="modal">
+            <ul>
+                <li>
+                    Organização: Permite o armazenamento estruturado de dados.
+                </li>
+                <li>
+                    Eficiência: Facilita a recuperação e atualização dos dados.
+                </li>
+                <li>
+                    Integridade: Mantém a consistência e a integridade dos dados.
+                </li>
+                <li>
+                    Segurança: Fornece mecanismos para proteger os dados contra acessos não autorizados.
+                </li>
+                <li>
+                    Centralização: Permite o armazenamento centralizado dos dados, o que facilita o compartilhamento entre diferentes usuários ou sistemas.
+                </li>
+                <li>
+                    Centralização: Permite o armazenamento centralizado dos dados, o que facilita o compartilhamento entre diferentes usuários ou sistemas.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="question" data-question="3">
+        <button class="btn">Como era o gerenciamento de dados sem o BD?</button>
+        <div class="modal">
+            <ul>
+                <li>
+                    Antes dos bancos de dados modernos, o gerenciamento de dados era feito usando sistemas de arquivos. Cada aplicação tinha seu próprio sistema de arquivos, o que muitas vezes levava à redundância e inconsistência dos dados.
+                </li>
+                <li>
+                    A recuperação e a atualização dos dados eram mais lentas e propensas a erros.
+                </li>
+                <li>
+                    Não havia mecanismos de controle de concorrência robustos, o que poderia levar a problemas de integridade dos dados.
+                </li>
+                <li>
+                    A segurança e a integridade dos dados eram muitas vezes dependentes das capacidades do sistema operacional e não eram tão granulares ou flexíveis quanto em um BD.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="question" data-question="4">
+        <button class="btn">Defina o que é um banco de dados:</button>
+        <div class="modal">
+            <h3>
+                Um banco de dados é um conjunto organizado de dados, 
+                armazenados de forma estruturada, para serem acessados, 
+                gerenciados e atualizados. 
+                Eles podem ser classificados de acordo com o seu conteúdo, 
+                como bibliográfico, texto, numérico ou imagens. 
+                Bancos de dados são geralmente gerenciados por um Sistema de Gerenciamento de Banco de Dados (SGBD).
+            </h3>
+        </div>
+    </div>
+    <div class="question" data-question="5">
+        <button class="btn">Cite 5 SGBDs conhecidos:</button>
+        <div class="modal">  
+            <ul>
+                <li>
+                    Oracle Database: Um SGBD relacional comercial muito popular e robusto.
+                </li>
+                <li>
+                    MySQL: Um SGBD relacional open-source amplamente usado, agora de propriedade da Oracle Corporation.
+                </li>
+                <li>
+                    Microsoft SQL Server: SGBD relacional desenvolvido pela Microsoft.
+                </li>
+                <li>
+                    PostgreSQL: Um SGBD relacional open-source poderoso e extensível.
+                </li>
+                <li>
+                    MongoDB: Um banco de dados NoSQL orientado a documentos.
+                </li>
+            </ul>
+        </div>      
+    </div>
+    <div class="question" data-question="6">
+        <button class="btn">Defina ACID:</button>
+        <div class="modal">  
+            <h3>
+                ACID é um conjunto de propriedades que garantem que as transações em um banco de dados sejam processadas de forma confiável. As propriedades são:
+            </h3>
+            <ul>
+                <li>
+                    Atomicidade (Atomicity): Garante que todas as operações dentro de uma transação sejam concluídas com sucesso; caso contrário, a transação é abortada.
+                </li>
+                <li>
+                    Consistência (Consistency): Garante que uma transação leve o banco de dados de um estado válido para outro.
+                </li>
+                <li>
+                    Isolamento (Isolation): Garante que as transações sejam executadas de forma isolada, sem interferências de outras transações.
+                </li>
+                <li>
+                    Durabilidade (Durability): Uma vez que uma transação é concluída, ela é garantida de ser permanente, mesmo em caso de falhas.
+                </li>
+            </ul>
+        </div>          
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
